@@ -1,0 +1,80 @@
+ // Create Students
+ {
+    "name": "Saurav",
+    "email": "saurav9860@gmail.com",
+    "age": 23,
+    "course": "PCBDeSign"
+}
+ 
+ 
+// Get All Students
+http://localhost:8585/api/students
+
+[
+    {
+        "id": 1,
+        "name": "Akash",
+        "email": "akash7070@gmail.com",
+        "age": 28,
+        "course": "Share Market"
+    },
+    {
+        "id": 2,
+        "name": "Satish",
+        "email": "Satish95@gmail.com",
+        "age": 24,
+        "course": "Oracle"
+    },
+    {
+        "id": 3,
+        "name": "Umesh",
+        "email": "Umesh5@gmail.com",
+        "age": 24,
+        "course": "Java"
+    },
+    {
+        "id": 4,
+        "name": "Ramesh",
+        "email": "ramesh60@gmail.com",
+        "age": 25,
+        "course": "MySQL"
+    },
+    {
+        "id": 5,
+        "name": "Saurav",
+        "email": "saurav9860@gmail.com",
+        "age": 23,
+        "course": "PCBDeSign"
+    },
+    {
+        "id": 6,
+        "name": "Saurav",
+        "email": "saurav9860@gmail.com",
+        "age": 23,
+        "course": "PCBDeSign"
+    }
+]
+
+// put Request for update the Record
+
+put :http://localhost:8585/api/students/1
+
+
+{
+    "id": 1,
+    "name": "Akash",
+    "email": "akash7070@gmail.com",
+    "age": 28,
+    "course": "Share Market"
+}
+
+//delete Request
+
+ Delete :http://localhost:8585/api/students/6
+
+
+    To retrieve all students: GET http://localhost:8585/api/students
+    To retrieve a specific student: GET http://localhost:8585/api/students/{id}
+    To create a new student: POST http://localhost:8585/api/students
+    To update a student: PUT http://localhost:8585/api/students/{id}
+    To delete a student: DELETE http://localhost:8585/api/students/{id}
